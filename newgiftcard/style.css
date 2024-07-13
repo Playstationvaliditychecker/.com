@@ -1,0 +1,44 @@
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+h1 {
+  font-size: 3rem;
+}
+form label {
+  font-size: 1.4rem;
+}
+.help {
+  padding: 20px 0;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+input[type="submit"] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.err {
+  color: red;
+}

